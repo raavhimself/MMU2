@@ -516,7 +516,7 @@ loop:
                 process_commands(uart_com);
                 if (fsensor_triggered == true) tag = true;
             }
-            moveSmooth(AX_PUL, STEPS_MK3FSensor_To_Bondtech, 712,false, false);   // Load from MK3-FSensor to Bontech gears, ready for loading into extruder with C0 command
+            moveSmooth(AX_PUL, STEPS_MK3FSensor_To_Bondtech, 722,false, false);   // Load from MK3-FSensor to Bontech gears, ready for loading into extruder with C0 command
             shr16_set_led(0x000);                                                 // Clear all 10 LEDs on MMU unit
             shr16_set_led(1 << 2 * (4 - active_extruder));
             isFilamentLoaded = true;  // filament loaded
